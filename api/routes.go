@@ -5,5 +5,5 @@ import (
 )
 
 func Index(w http.ResponseWriter, r *http.Request){
-	w.WriteHeader(203)
+	w.WriteHeader(200)
 }
