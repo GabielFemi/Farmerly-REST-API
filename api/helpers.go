@@ -8,3 +8,7 @@ func getCategories() []farmerly.Categories {
 func getUsers() []farmerly.Users {
 	return farmerly.FetchUsers()
 }
+
+func getPosts() []farmerly.Posts {
+	return farmerly.GetPosts()
+}
