@@ -10,6 +10,7 @@ import (
 
 func main() {
 	http.HandleFunc("/categories", api.Index)
+	http.HandleFunc("/users", api.Users)
 	log.Println("Listening on 127.0.0.1:9000")
 	_ = http.ListenAndServe(":9000", nil)
 }

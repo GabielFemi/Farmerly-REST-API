@@ -11,3 +11,7 @@ func Index(w http.ResponseWriter, r *http.Request){
 	_ = json.NewEncoder(w).Encode(getCategories())
 
 }
+func Users(w http.ResponseWriter, r *http.Request){
+	w.WriteHeader(200)
+	_ = json.NewEncoder(w).Encode(getUsers())
+}
