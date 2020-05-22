@@ -6,12 +6,13 @@ import (
 	_ "github.com/gabielfemi/go-inform/farmerly"
 	"log"
 	"net/http"
-)
+	)
 
 func main() {
 	http.HandleFunc("/categories", api.Index)
 	http.HandleFunc("/users", api.Users)
 	http.HandleFunc("/posts", api.Posts)
+	http.HandleFunc("/posts/fg", api.GetSinglePost)
 	log.Println("Listening on 127.0.0.1:9000")
 	_ = http.ListenAndServe(":9000", nil)
 }
